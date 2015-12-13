@@ -17,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/places")
-public class PlacesResource {
+public class  PlacesResource {
 
     @Autowired
     PlacesRepositoryService placesRepositoryService;

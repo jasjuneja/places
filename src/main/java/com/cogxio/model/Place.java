@@ -10,21 +10,21 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection="places")
 public class Place {
 
-    @Id
+
     private String id;
-    public String sno;
+   // public String iD;
     public String name;
     public String category;
     public String rating;
     public String latitude;
     public String longitude;
 
-    public String getSno() {
-        return sno;
+    public String getId() {
+        return id;
     }
 
-    public void setSno(String sno) {
-        this.sno = sno;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
