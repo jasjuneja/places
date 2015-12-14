@@ -14,12 +14,10 @@
 	<script type="text/javascript">
 	$(document).ready(function() {
     $.ajax({
-        url: "http://localhost:8080/api/places/list"
+        url: "http://54.213.42.41:8080/api/places/list"
     }).then(function(data) {
         $("#lat").val(data[0].latitude);
         $("#long").val(data[0].longitude);
-        alert($("#lat").val());
-        alert($("#long").val());
     });
 });
   function loadMap() {
@@ -33,8 +31,7 @@
 
     var marker = new google.maps.Marker({
       position: latlng,
-      map: map,
-      title:"my hometown, Malim Nawar!"
+      map: map
     });
 
   }

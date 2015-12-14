@@ -11,21 +11,23 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Place {
 
 
-    private String id;
-   // public String iD;
+
+    public String sno;
     public String name;
     public String category;
     public String rating;
     public String latitude;
     public String longitude;
 
-    public String getId() {
-        return id;
+    public String getSno() {
+        return sno;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setSno(String sno) {
+        this.sno = sno;
     }
+
+
 
     public String getName() {
         return name;
